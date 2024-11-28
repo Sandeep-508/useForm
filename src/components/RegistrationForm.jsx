@@ -22,8 +22,8 @@ const FormWithTable = () => {
         <div className="flex items-center justify-center min-h-screen flex-col">
             <form onSubmit={handleSubmit(onSubmit)} className="flex bg-[#FEFEFE] shadow-box max-w-[700px] mx-auto p-5 rounded-md items-center gap-4 justify-center flex-col w-full">
                 <h2 className="mb-8 text-4xl font-bold font-Poppins">Form Validation</h2>
-                <div className="flex items-center justify-between gap-6 max-w-[500px] w-full">
-                    <label className="text-xl font-medium font-leagueSpartan">First Name:</label>
+                <div className="flex items-center justify-between gap-2 max-w-[500px] w-full">
+                    <label className="sm:text-xl text-sm font-medium font-leagueSpartan">First Name:</label>
                     <div className="flex items-start flex-col">
                         <input className="p-3 border border-[#D2D6DB] rounded-md w-full font-leagueSpartan font-normal"
                             type="text"
@@ -32,8 +32,8 @@ const FormWithTable = () => {
                         {errors.firstName && <p className="text-red-700 text-xs font-leagueSpartan">{errors.firstName.message}</p>}
                     </div>
                 </div>
-                <div className="flex items-center justify-between gap-6 max-w-[500px] w-full">
-                    <label className="text-xl font-medium font-leagueSpartan">Last Name:</label>
+                <div className="flex items-center justify-between gap-2 max-w-[500px] w-full">
+                    <label className="sm:text-xl text-sm font-medium font-leagueSpartan">Last Name:</label>
                     <div className="flex items-start flex-col">
                         <input className="p-3 border border-[#D2D6DB] rounded-md w-full font-leagueSpartan font-normal"
                             type="text"
@@ -42,8 +42,8 @@ const FormWithTable = () => {
                         {errors.lastName && <p className="text-red-700 text-xs font-leagueSpartan">{errors.lastName.message}</p>}
                     </div>
                 </div>
-                <div className="flex items-center justify-between gap-6 max-w-[500px] w-full">
-                    <label className="text-xl font-medium font-leagueSpartan">Password:</label>
+                <div className="flex items-center justify-between gap-2 max-w-[500px] w-full">
+                    <label className="sm:text-xl text-sm font-medium font-leagueSpartan">Password:</label>
                     <div className="flex items-start flex-col">
                         <input className="p-3 border border-[#D2D6DB] rounded-md w-full font-leagueSpartan font-normal"
                             type="password"
@@ -58,8 +58,8 @@ const FormWithTable = () => {
                         {errors.password && <p className="text-red-700 text-xs font-leagueSpartan">{errors.password.message}</p>}
                     </div>
                 </div>
-                <div className="flex items-center justify-between gap-6 max-w-[500px] w-full">
-                    <label className="text-xl font-medium font-leagueSpartan">Confirm Password:</label>
+                <div className="flex items-center justify-between gap-2 max-w-[500px] w-full">
+                    <label className="sm:text-xl text-sm font-medium font-leagueSpartan">Confirm Password:</label>
                     <div className="flex items-start flex-col">
                         <input className="p-3 border border-[#D2D6DB] rounded-md w-full font-leagueSpartan font-normal"
                             type="password"
@@ -92,7 +92,7 @@ const FormWithTable = () => {
                             <td className="text-lg border border-[#D2D6DB] font-semibold py-2 font-leagueSpartan">
                                 <button className="py-1 px-2 bg-green-300 rounded-lg mr-1 font-leagueSpartan">Edit</button>
                                 <button className="py-1 px-2 bg-green-300 rounded-lg font-leagueSpartan">Done</button>
-                            </td>                            
+                            </td>
                         </tr>
                     ))}
                 </tbody>
